@@ -1,19 +1,25 @@
+@import "../util/mediaq";
+
 footer {
-  padding: $padding-RL;
-  height: 50vh;
+  padding: 50px 100px;
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: $color-blue-dark;
-  color: $color-white;
-  font-weight: 300;
   font-size: 11px;
-  position: relative;
+  font-weight: 300;
+  color: $color-white;
+  background: linear-gradient(
+    340deg,
+    rgba(64, 87, 157, 1) 51%,
+    rgba(67, 103, 174, 1) 71%,
+    rgba(75, 154, 231, 1) 100%
+  );
 
   .la-footer__logo {
-    height: 70px;
-    width: 70px;
+    height: 90px;
+    width: 90px;
     background-image: url("/asset/logoWH.png");
     background-size: contain;
     background-position: center;
@@ -26,9 +32,23 @@ footer {
     align-items: center;
     margin: 30px;
 
+    @include responsive-xs {
+      flex-direction: column;
+      margin: 10px;
+    }
+
     .la-footer__tab {
       margin: 30px;
       font-size: 12px;
+      cursor: pointer;
+
+      @include responsive-xs {
+        margin: 10px;
+      }
+
+      &:hover {
+        font-weight: 400;
+      }
     }
   }
 
@@ -41,27 +61,43 @@ footer {
 
     div:nth-child(1),
     div:nth-child(3) {
-      width: 40%;
+      width: 50%;
       margin: 20px;
       opacity: 0.2;
       color: $color-white;
     }
   }
 
-  .la-footer__icon {
-    position: absolute;
-    right: 250px;
-    bottom: 190px;
-  }
+  // .la-footer__icon {
+  //   position: absolute;
+  //   right: 220px;
+  //   bottom: 170px;
+  //   cursor: pointer;
 
-  .la-footer__content {
+  //   @include responsive-md {
+  //     bottom: 190px;
+  //   }
+  //   @include responsive-sm {
+  //     display: none;
+  //   }
+  //   @include responsive-xs {
+  //     display: none;
+  //   }
+  // }
+
+  p {
     width: 50%;
     margin: 30px;
     text-align: center;
+
+    @include responsive-xs {
+      width: 90%;
+    }
   }
 
   .la-footer__social {
     display: flex;
+    padding-bottom: 30px;
 
     h4,
     a i {

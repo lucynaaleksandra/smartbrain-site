@@ -1,11 +1,16 @@
 @import "../util/variables";
+@import "../util/mediaq";
 
 nav {
   padding: $padding-RL;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  // margin: 10px;
+
+  @include responsive-xs {
+    padding: 10px 30px;
+    flex-wrap: wrap;
+  }
 
   .la-nav__logo {
     height: 70px;
@@ -21,13 +26,24 @@ nav {
     flex-direction: row;
     align-items: center;
 
-    .la-nav__tab {
-      margin-left: 15px;
+    @include responsive-xs {
+      margin: 10px 0 20px 0;
+      order: 1;
+      flex-basis: 100%;
+      align-items: center;
+      justify-content: space-around;
+    }
 
-      // > div {
-      // 	color: $color-white;
-      // 	border: 1px solid $color-white;
-      // }
+    .la-nav__tab {
+      margin-left: 20px;
+      font-size: 13px;
+    }
+
+    button {
+      margin-left: 20px;
+
+      //   color: $color-white;
+      //   border: 1px solid $color-white;
     }
   }
 }
