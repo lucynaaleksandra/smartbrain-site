@@ -9,6 +9,7 @@ footer {
   color: $color-white;
   font-weight: 300;
   font-size: 11px;
+  position: relative;
 
   .la-footer__logo {
     height: 70px;
@@ -32,14 +33,25 @@ footer {
   }
 
   .la-footer__divider {
+    width: 100%;
     display: flex;
-    // flex-direction: row;
-    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-    hr {
-      flex: 0 0 100%;
-      // width: 30%;
+    div:nth-child(1),
+    div:nth-child(3) {
+      width: 40%;
+      margin: 20px;
+      opacity: 0.2;
+      color: $color-white;
     }
+  }
+
+  .la-footer__icon {
+    position: absolute;
+    right: 250px;
+    bottom: 190px;
   }
 
   .la-footer__content {
