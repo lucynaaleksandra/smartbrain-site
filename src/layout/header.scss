@@ -1,0 +1,33 @@
+@import "../util/variables";
+
+header {
+  height: 90vh;
+  display: flex;
+  background: teal;
+
+  .la-header__content {
+    padding: $padding-RL;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .la-header__img-wrap {
+    height: 100%;
+    width: 50%;
+    justify-content: center;
+    background: paleturquoise;
+
+    .la-header__img {
+      // padding: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url("/asset/sb-3.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+}

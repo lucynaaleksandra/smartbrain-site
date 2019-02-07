@@ -1,0 +1,33 @@
+@import "../util/variables";
+
+nav {
+  padding: $padding-RL;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  // margin: 10px;
+
+  .la-nav__logo {
+    height: 70px;
+    width: 70px;
+    background-image: url("/asset/logoBL.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .la-nav__tabs {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .la-nav__tab {
+      margin-left: 15px;
+
+      // > div {
+      // 	color: $color-white;
+      // 	border: 1px solid $color-white;
+      // }
+    }
+  }
+}
