@@ -1,4 +1,5 @@
 @import "../util/mediaq";
+@import "../util/animations";
 
 footer {
   padding: 50px 100px;
@@ -42,6 +43,10 @@ footer {
       font-size: 12px;
       cursor: pointer;
 
+      &:hover {
+        @include hover-scale-01;
+      }
+
       @include responsive-xs {
         margin: 10px;
       }
@@ -68,22 +73,23 @@ footer {
     }
   }
 
-  // .la-footer__icon {
-  //   position: absolute;
-  //   right: 220px;
-  //   bottom: 170px;
-  //   cursor: pointer;
+  .la-footer__icon {
+    position: relative;
+    right: -400px;
+    bottom: 50px;
+    cursor: pointer;
+    @include hover-scale-01;
 
-  //   @include responsive-md {
-  //     bottom: 190px;
-  //   }
-  //   @include responsive-sm {
-  //     display: none;
-  //   }
-  //   @include responsive-xs {
-  //     display: none;
-  //   }
-  // }
+    @include responsive-md {
+      right: -300px;
+    }
+    @include responsive-sm {
+      right: -200px;
+    }
+    @include responsive-xs {
+      display: none;
+    }
+  }
 
   p {
     width: 50%;
@@ -98,6 +104,14 @@ footer {
   .la-footer__social {
     display: flex;
     padding-bottom: 30px;
+
+    a {
+      font-size: 15px;
+
+      &:hover {
+        @include hover-scale-01;
+      }
+    }
 
     h4,
     a i {

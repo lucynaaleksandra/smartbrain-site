@@ -1,4 +1,5 @@
 @import "../util/mediaq";
+@import "../util/animations";
 
 header {
   height: 90vh;
@@ -35,8 +36,8 @@ header {
   }
 
   .la-header__content {
-    padding: 0 200px;
-    width: 50%;
+    padding: 0 100px;
+    width: 40%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -59,7 +60,6 @@ header {
 
     h1 {
       font-size: 60px;
-      letter-spacing: 3px;
     }
 
     h3 {
@@ -67,17 +67,18 @@ header {
       font-size: 15px;
       font-weight: 300;
     }
+
+    button:hover {
+      @include hover-scale-01;
+    }
   }
 
   .la-header__img-wrap {
     height: 100%;
-    width: 50%;
+    width: 60%;
     justify-content: center;
-    background: paleturquoise;
-    position: relative;
 
     .la-header__img {
-      // padding: 0;
       width: 100%;
       height: 100%;
       background-image: linear-gradient(
@@ -88,12 +89,17 @@ header {
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
-      // clip-path: polygon(0 0, 100% 0, 100% 20%, 100% 65%, 75% 92%, 51% 93%, 0 43%, 0% 20%);
 
-      // position: absolute;
-      // top: -100px;
-      // right: 0;
-      // z-index: 0;
+      -webkit-clip-path: ellipse(73% 94% at 74% 5%);
+      clip-path: ellipse(73% 94% at 74% 5%);
+
+      // -webkit-clip-path: ellipse(73% 81% at 73% 48%);
+      // clip-path: ellipse(73% 81% at 73% 48%);
+
+      position: relative;
+      top: -100px;
+      right: 0;
+      z-index: 0;
     }
   }
 }
