@@ -110,11 +110,11 @@ header {
       background-position: center;
       background-repeat: no-repeat;
 
-      -webkit-clip-path: ellipse(73% 94% at 74% 5%);
-      clip-path: ellipse(73% 94% at 74% 5%);
+      // -webkit-clip-path: ellipse(73% 94% at 74% 5%);
+      // clip-path: ellipse(73% 94% at 74% 5%);
 
-      // -webkit-clip-path: ellipse(73% 81% at 73% 48%);
-      // clip-path: ellipse(73% 81% at 73% 48%);
+      -webkit-clip-path: ellipse(73% 81% at 73% 48%);
+      clip-path: ellipse(73% 81% at 73% 48%);
 
       position: relative;
       top: -100px;
