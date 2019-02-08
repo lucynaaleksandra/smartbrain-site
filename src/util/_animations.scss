@@ -93,25 +93,25 @@ $easeInOutQuint: cubic-bezier(0.86, 0, 0.07, 1);
 //   }
 // }
 
-// @keyframes scale-up {
-//   from {
-//     opacity: 0;
-//     transform: scale(0.7);
-//   }
-//   to {
-//     opacity: 1;
-//     transform: scale(1);
-//   }
-// }
+@keyframes scale-up {
+  from {
+    opacity: 0;
+    transform: scale(0.7);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
 
-// @include keyframes(fade) {
-//   0% {
-//     opacity: 0;
-//   }
-//   100% {
-//     opacity: 1;
-//   }
-// }
+@include keyframes(fade) {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 
 // @keyframes enter-scale-x {
 //   from {
@@ -124,34 +124,34 @@ $easeInOutQuint: cubic-bezier(0.86, 0, 0.07, 1);
 //   }
 // }
 
-// @keyframes to-origin-y {
-//   to {
-//     opacity: 1;
-//     transform: translateY(0);
-//   }
-// }
+@keyframes to-origin-y {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
-// @keyframes fade-down {
-//   from {
-//     opacity: 0;
-//     transform: translateY(-40px);
-//   }
-//   to {
-//     opacity: 1;
-//     transform: translateY(0);
-//   }
-// }
+@keyframes fade-down {
+  from {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
-// @keyframes fade-up {
-//   from {
-//     opacity: 0;
-//     transform: translateY(40px);
-//   }
-//   to {
-//     opacity: 1;
-//     transform: translateY(0);
-//   }
-// }
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
 // @keyframes to-right {
 //   0% {
@@ -164,28 +164,28 @@ $easeInOutQuint: cubic-bezier(0.86, 0, 0.07, 1);
 //   }
 // }
 
-// @keyframes left-to-right {
-//   0% {
-//     opacity: 0;
-//     transform: translateX(-20%);
-//   }
-//   100% {
-//     opacity: 1;
-//     transform: translateX(0);
-//   }
-// }
+@keyframes left-to-right {
+  0% {
+    opacity: 0;
+    transform: translateX(-20%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
 
-// @keyframes right-to-left {
-//   0% {
-//     opacity: 0;
-//     transform: translateX(20%);
-//   }
-//   100% {
-//     opacity: 1;
-//     transform: translateX(0);
-//   }
-// }
+@keyframes right-to-left {
+  0% {
+    opacity: 0;
+    transform: translateX(20%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
 
-// @include create-fade-up-keyframes("enter-fade-up-1", 0.8);
+@include create-fade-up-keyframes("enter-fade-up-1", 0.8);
 
 // animation: scale-down 2000ms $easeOutBack 1300ms forwards;
