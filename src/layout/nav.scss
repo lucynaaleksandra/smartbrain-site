@@ -1,7 +1,3 @@
-@import "../util/variables";
-@import "../util/mediaq";
-@import "../util/animations";
-
 nav {
   padding: $padding-RL;
   display: flex;
@@ -18,7 +14,7 @@ nav {
   .la-nav__logo {
     height: 80px;
     width: 80px;
-    background-image: url("/asset/logoBL.png");
+    background-image: url("asset/logoBL.png");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;

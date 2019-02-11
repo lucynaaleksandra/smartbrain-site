@@ -1,8 +1,12 @@
-@import "./nav.scss";
-@import "./header.scss";
-@import "./options.scss";
-@import "./dev.scss";
-@import "./chart.scss";
-@import "./blog.scss";
-@import "./review.scss";
-@import "./footer.scss";
+@import "./util/variables";
+@import "./util/mediaq";
+@import "./util/animations";
+
+@import "./nav";
+@import "./header";
+@import "./options";
+@import "./dev";
+@import "./chart";
+@import "./blog";
+@import "./review";
+@import "./footer";

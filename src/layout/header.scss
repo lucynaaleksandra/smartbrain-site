@@ -1,6 +1,3 @@
-@import "../util/mediaq";
-@import "../util/animations";
-
 header {
   height: 90vh;
   display: flex;
@@ -13,7 +10,7 @@ header {
         rgba(12, 12, 12, 0.7),
         rgba(12, 12, 12, 0.7)
       ),
-      url("/asset/sb-3.jpg");
+      url("asset/sb-3.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -28,7 +25,7 @@ header {
         rgba(12, 12, 12, 0.7),
         rgba(12, 12, 12, 0.7)
       ),
-      url("/asset/sb-3.jpg");
+      url("asset/sb-3.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -105,7 +102,7 @@ header {
           rgba(12, 12, 12, 0.7),
           rgba(12, 12, 12, 0.7)
         ),
-        url("/asset/sb-3.jpg");
+        url("asset/sb-3.jpg");
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;

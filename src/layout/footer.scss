@@ -1,6 +1,3 @@
-@import "../util/mediaq";
-@import "../util/animations";
-
 footer {
   padding: 50px 100px;
   position: relative;
@@ -21,7 +18,7 @@ footer {
   .la-footer__logo {
     height: 90px;
     width: 90px;
-    background-image: url("/asset/logoWH.png");
+    background-image: url("asset/logoWH.png");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -105,7 +102,7 @@ footer {
     display: flex;
     padding-bottom: 30px;
 
-    a {
+    i {
       font-size: 15px;
 
       &:hover {
