@@ -19,7 +19,7 @@ nav {
     background-position: center;
     background-repeat: no-repeat;
     opacity: 0;
-    animation: left-to-right 3000ms $easeOutBack 800ms forwards;
+    animation: left-to-right 3000ms $easeOutBack 500ms forwards;
   }
 
   .la-nav__tabs {
@@ -28,7 +28,7 @@ nav {
     align-items: center;
     color: $color-white;
     opacity: 0;
-    animation: fade 3000ms $easeOutBack 800ms forwards;
+    animation: fade 3000ms $easeOutBack 500ms forwards;
 
     @include responsive-xs {
       margin: 10px 0 20px 0;
@@ -64,7 +64,7 @@ nav {
       color: $color-white;
       border: 1px solid $color-white;
       opacity: 0;
-      animation: fade 3000ms $easeOutBack 800ms forwards;
+      animation: fade 3000ms $easeOutBack 500ms forwards;
 
       &:hover {
         @include hover-scale-01;

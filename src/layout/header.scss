@@ -66,12 +66,12 @@ header {
       font-size: 15px;
       font-weight: 300;
       opacity: 0;
-      animation: fade-up 2000ms $easeOutBack 1000ms forwards;
+      animation: fade-up 2000ms $easeOutBack 800ms forwards;
     }
 
     button {
       opacity: 0;
-      animation: fade-up 2000ms $easeOutBack 1500ms forwards;
+      animation: fade-up 2000ms $easeOutBack 1100ms forwards;
 
       &:hover {
         @include hover-scale-01;
