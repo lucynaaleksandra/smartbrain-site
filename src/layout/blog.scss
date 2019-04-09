@@ -1,0 +1,139 @@
+.la-blog {
+  height: 100vh;
+  display: flex;
+
+  @include responsive-sm {
+    flex-direction: column;
+  }
+  @include responsive-xs {
+    flex-direction: column;
+  }
+
+  .la-blog__content {
+    padding-left: 200px;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    @include will-animate-y(300ms);
+
+    @include responsive-md {
+      padding-left: 100px;
+    }
+    @include responsive-sm {
+      padding-left: 50px;
+    }
+    @include responsive-xs {
+      width: 100%;
+      padding: 50px;
+    }
+
+    .icon-box {
+      margin-bottom: 30px;
+      opacity: 0.3;
+      background: $color-green;
+
+      img {
+        width: 100%;
+        color: $color-green;
+      }
+    }
+
+    button {
+      margin-top: 30px;
+
+      &:hover {
+        @include hover-scale-01;
+      }
+    }
+  }
+
+  .la-blog__img {
+    width: 100%;
+    height: 100%;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    color: $color-white;
+    @include will-animate-y(700ms);
+
+    @include responsive-md {
+      margin-top: 75px;
+    }
+    @include responsive-sm {
+      margin-top: 75px;
+    }
+    @include responsive-xs {
+      margin: 0;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    > div:nth-child(1) {
+      width: 80%;
+      height: 80%;
+      background-image: url("asset/sb-2.jpg");
+      background-size: contain;
+      background-position: right;
+      background-repeat: no-repeat;
+
+      @include responsive-xs {
+        display: none;
+      }
+    }
+
+    > div:nth-child(2) {
+      width: 60%;
+      padding: 40px 20px 20px 20px;
+      font-size: 11px;
+      background: linear-gradient(
+        270deg,
+        rgba(75, 154, 231, 1) 31%,
+        rgba(64, 87, 157, 1) 98%
+      );
+      position: relative;
+      bottom: 100px;
+      right: 0;
+
+      @include responsive-md {
+        width: 70%;
+        bottom: 150px;
+      }
+      @include responsive-sm {
+        width: 70%;
+        bottom: 150px;
+        font-size: 10px;
+      }
+      @include responsive-xs {
+        position: static;
+      }
+
+      > div {
+        width: 50px;
+        height: 50px;
+        background: orange;
+        border-radius: 50%;
+        position: absolute;
+        top: -25px;
+        left: 40px;
+
+        @include responsive-xs {
+          display: none;
+        }
+
+        i {
+          position: absolute;
+          top: 25%;
+          left: 25%;
+        }
+
+        &:hover {
+          @include hover-scale-01;
+        }
+      }
+    }
+  }
+}

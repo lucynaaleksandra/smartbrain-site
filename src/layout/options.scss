@@ -1,0 +1,165 @@
+.la-options {
+  display: flex;
+
+  @include responsive-sm {
+    flex-direction: column-reverse;
+  }
+  @include responsive-xs {
+    flex-direction: column-reverse;
+    margin-top: 50px;
+  }
+
+  .la-options__col-1 {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include responsive-sm {
+      width: 100%;
+      padding: 50px;
+      flex-direction: column;
+    }
+    @include responsive-xs {
+      width: 100%;
+      padding: 25px;
+      flex-direction: column;
+    }
+
+    .la-options__left {
+      display: flex;
+      flex-direction: column;
+      @include will-animate-y(300ms);
+
+      @include responsive-sm {
+        flex-direction: row;
+      }
+      @include responsive-xs {
+        flex-direction: column;
+      }
+    }
+
+    .la-options__right {
+      margin-top: 200px;
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      @include will-animate-y(600ms);
+
+      @include responsive-sm {
+        flex-direction: row;
+        margin-top: 0;
+      }
+      @include responsive-xs {
+        margin-top: 0;
+        padding: 0;
+      }
+    }
+
+    .la-options__box {
+      height: 230px;
+      width: 210px;
+      margin-bottom: 30px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      box-shadow: $box-shadow;
+      border-radius: 20px;
+      cursor: pointer;
+
+      @include responsive-sm {
+        margin: 10px;
+      }
+
+      &:hover {
+        background: linear-gradient(
+          152deg,
+          rgba(75, 154, 231, 0.9) 31%,
+          rgba(64, 87, 157, 0.9) 98%
+        );
+        @include hover-scale-01;
+
+        i,
+        p,
+        h3 {
+          color: $color-white;
+        }
+      }
+    }
+
+    .la-options__left,
+    .la-options__right {
+      .icon-box {
+        margin-bottom: 30px;
+        opacity: 0.3;
+        img {
+          width: 100%;
+        }
+      }
+    }
+
+    .la-options__left {
+      div:nth-child(1) {
+        .icon-box {
+          background: $color-orange;
+          img {
+            color: $color-orange;
+          }
+        }
+      }
+      div:nth-child(2) {
+        .icon-box {
+          background: $color-green;
+          img {
+            color: $color-green;
+          }
+        }
+      }
+    }
+    .la-options__right {
+      div:nth-child(1) {
+        .icon-box {
+          background: $color-blue;
+          img {
+            color: $color-blue;
+          }
+        }
+      }
+      div:nth-child(2) {
+        .icon-box {
+          background: $color-purple;
+          img {
+            color: $color-purple;
+          }
+        }
+      }
+    }
+  }
+
+  .la-options__col-2 {
+    padding: 50px 50px 100px 0;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    @include will-animate-y(900ms);
+
+    @include responsive-sm {
+      padding: 100px;
+      width: 100%;
+    }
+    @include responsive-xs {
+      padding: 50px;
+      width: 100%;
+    }
+
+    button {
+      margin-top: 30px;
+
+      &:hover {
+        @include hover-scale-01;
+      }
+    }
+  }
+}
