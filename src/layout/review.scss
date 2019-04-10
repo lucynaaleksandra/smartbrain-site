@@ -8,8 +8,13 @@
   position: relative;
   // @include will-animate-y(400ms);
 
+  @include responsive-sm {
+    padding: 0 50px;
+    margin: 0 100px;
+  }
   @include responsive-xs {
-    margin: 100px 50px;
+    margin: 0;
+    padding: 50px;
   }
 
   .la-join__img-1,
@@ -48,15 +53,19 @@
   }
 
   .la-join__img-1,
+  .la-join__img-2,
   .la-join__img-3,
   .la-join__img-4,
+  .la-join__img-5,
   .la-join__img-6 {
     @include responsive-xs {
       display: none;
     }
   }
 
+  .la-join__img-1,
   .la-join__img-3,
+  .la-join__img-4,
   .la-join__img-6 {
     @include responsive-sm {
       display: none;
@@ -71,6 +80,9 @@
     width: 60%;
     @include will-animate-y;
 
+    @include responsive-sm {
+      width: 100%;
+    }
     @include responsive-xs {
       width: 100%;
     }
@@ -79,6 +91,10 @@
     p {
       text-align: center;
       font-weight: 300;
+    }
+
+    h2 {
+      font-size: 25px;
     }
   }
 
@@ -103,24 +119,42 @@
     justify-content: space-between;
 
     @include responsive-sm {
-      padding: 20px;
+      flex-direction: column;
+      padding: 0;
     }
     @include responsive-xs {
-      padding: 20px;
+      padding: 0;
       flex-direction: column;
     }
 
-    h2 {
-      color: $color-blue;
-      font-weight: 300;
+    > div {
+      @include responsive-sm {
+        text-align: center;
+      }
+      @include responsive-xs {
+        text-align: center;
+      }
+
+      h2 {
+        color: $color-blue;
+        font-weight: 300;
+      }
+      p {
+        font-size: 12px;
+      }
     }
-    p {
-      font-size: 12px;
-    }
+  }
+
+  .la-review--cta {
+    align-self: center;
   }
 
   button {
     background: $color-btn;
+
+    @include responsive-sm {
+      margin: 30px;
+    }
 
     &:hover {
       @include hover-scale-01;

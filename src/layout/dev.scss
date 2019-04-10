@@ -60,6 +60,9 @@
       @include responsive-sm {
         background-size: cover;
       }
+      @include responsive-xs {
+        display: none;
+      }
     }
   }
 }

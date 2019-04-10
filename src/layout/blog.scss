@@ -1,12 +1,15 @@
 .la-blog {
-  height: 100vh;
+  height: 80vh;
   display: flex;
 
   @include responsive-sm {
+    height: 100vh;
     flex-direction: column;
   }
   @include responsive-xs {
+    height: 100vh;
     flex-direction: column;
+    padding: 50px;
   }
 
   .la-blog__content {
@@ -22,11 +25,12 @@
       padding-left: 100px;
     }
     @include responsive-sm {
-      padding-left: 50px;
+      width: 100%;
+      padding: 0 100px;
     }
     @include responsive-xs {
       width: 100%;
-      padding: 50px;
+      padding: 0;
     }
 
     .icon-box {
@@ -60,10 +64,10 @@
     @include will-animate-y(700ms);
 
     @include responsive-md {
-      margin-top: 75px;
+      // margin-top: 75px;
     }
     @include responsive-sm {
-      margin-top: 75px;
+      // margin-top: 75px;
     }
     @include responsive-xs {
       margin: 0;
@@ -80,6 +84,9 @@
       background-position: right;
       background-repeat: no-repeat;
 
+      @include responsive-sm {
+        display: none;
+      }
       @include responsive-xs {
         display: none;
       }
@@ -103,12 +110,14 @@
         bottom: 150px;
       }
       @include responsive-sm {
-        width: 70%;
+        width: 100%;
         bottom: 150px;
         font-size: 10px;
       }
       @include responsive-xs {
-        position: static;
+        padding: 20px;
+        width: 100%;
+        bottom: 150px;
       }
 
       > div {

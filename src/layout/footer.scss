@@ -15,6 +15,10 @@ footer {
     rgba(75, 154, 231, 1) 100%
   );
 
+  @include responsive-xs {
+    padding: 25px;
+  }
+
   .la-footer__logo {
     height: 90px;
     width: 90px;
